@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.imgToto{
+    background-image: url(Imagenes/encabezado.jpg);
+    width: 1400px;
+    height: 300px;
+}
+.logo{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+}
+a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+}
+a:hover{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+}
+a:active{
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight:bold;
+}
+#content{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+}
+.container{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+}
+.inicio{
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight:bold;
+}
+h1,h2,h3,h4,h5,p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+}
+button{
+    background-color: blueviolet;
+}
+
+.logos{
+    width: 200px;
+    height: 200px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+}
+.imgnudo{
+    color: yellowgreen;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+}
+.imghilo{
+    color: yellowgreen;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+}
+.iconos{
+    width: 10px;
+    height: 10px;
+    float: right;
+}
