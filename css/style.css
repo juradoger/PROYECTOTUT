@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /*Para que la imagen vaya dentro del area del contenido, una pseudoclase*/
+}
+
+:root {
+    --boton-color: blueviolet;
+    --boton-size: 5cm;
+
+}
+
+body {
+    background-color: black;
+}
+
+.encabezado_fondoprin {
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.imagen {
+    width: 400px;
+    height: 400px;
+    padding: 0.5cm;
+    border-radius: 10%;
+}
+
+.inicio_1parteimg {
+    margin: 20px;
+    padding-right: 10px;
+}
+
+/*
+.nombrepagina_primera {
+    color: white;
+}
+*/
+.nombrepagina_segunda {
+    color: black;
+}
+
+.encabezado_fondo {
+    border: 30px;
+    width: 100%;
+    height: 200px;
+    background-image: url(/src/Imagen4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icono {
+    width: 20px;
+    height: 20px;
+}
+
+.navegacion {
+    color: white;
+    font-size: 72px;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: unset;
+    background-position: inherit;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+.barranav {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comentario__form__item button {
+    background-color: blueviolet;
+
+    &:hover {
+        background-color: rgb(74, 56, 90);
+    }
+
+    &:active {
+        background-color: rgb(224, 16, 155);
+    }
+}
+
+button {
+    background-color: var(--boton-color);
+    background-size: var(--boton-size);
+}
+
+.comentario__form__item textarea:focus {
+    background-color: pink;
+}
+
+.nombrepagina_primera::first-line {
+    color: aliceblue;
+}
