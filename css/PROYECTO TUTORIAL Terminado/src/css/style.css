@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /Para que la imagen vaya dentro del area del contenido, una pseudoclase/
+}
+:root {
+    --boton-color: blueviolet;
+    --boton-size: 4cm;
+
+}
+section{
+    margin: 1cm;
+}
+.inicio_notepierdas{
+    font-family: 'Give You Glory', cursive;
+    font-size: 28px;
+}
+.inicio_descripcion{
+    font-size: 26px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px beige;
+}
+.iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.icono {
+    margin: 1cm;
+    width: 50px;
+    height: 50px;
+}
+
+.contenido {
+    visibility: collapse;
+}
+
+.icono:checked .contenido {
+    visibility: visible;
+}
+
+body {
+    background-color: black;
+    list-style-type: none;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    padding: 0.5cm;
+    border-radius: 10%;
+}
+
+.inicioimgs {
+    display: flex;
+}
+
+.nombrepagina {
+    line-height: 1.8cm;
+}
+
+.nombrepagina .nombrepagina_primera {
+    color: white;
+    margin-left: 1cm;
+    font-size: 98px;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+.nombrepagina_segunda {
+    color: black;
+    margin-left: 3cm;
+    font-size: 56px;
+    font-family: 'Lilita One', cursive;
+    font-style: italic;
+    text-align: start;
+    text-shadow: 2px 2px 2px white;
+}
+
+.encabezado_fondo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url(/src/R.jfif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.navegacion {
+    color: white;
+    font-size: 72px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+.barranav {
+    text-align: center;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid white;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.comentario_form_item button {
+    background-color: blueviolet;
+
+    &:hover {
+        background-color: blueviolet;
+    }
+
+    &:active {
+        background-color: rgb(224, 16, 155);
+    }
+}
+
+.inicio_descripcion {
+    text-align: center;
+}
+
+button {
+    background-color: var(--boton-color);
+    width: var(--boton-size);
+    height: 1cm;
+    border-radius: 1cm;
+    margin: 4px auto;
+    text-align: center;
+    margin-left: 4.1cm;
+}
+
+.comentario_form_item textarea:focus {
+    background-color: pink;
+}
+.imgs{
+    padding: 1cm;
+    margin: 2cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid white;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+}
+.img-1{
+    text-align: center;
+}
+h1{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 128px;
+    color: aquamarine;
+    text-align: center;
+    text-shadow: 6px 2px 2px white;
+}
+.subtitle{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 98px;
+    color: rgb(60, 77, 36);
+    text-align: center;   
+    text-shadow: 1px 1px 1px rgb(147, 215, 10);
+}
+.contain{
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+    color: rgb(193, 146, 57);
+}
+.preguntasiesxiste{
+    font-family: 'Homemade Apple', cursive;
+    font-size: 24px;
+    color: rgb(177, 69, 116);
+    text-align: center;
+}
+.lop{
+    font-family: 'Genos', sans-serif;
+    font-size: 18px;
+    color: rgb(183, 12, 218);
+    text-align: center;
+}
+.preguntas{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 32px;
+    color: cadetblue;
+}
+.respuestas{
+    font-family: 'Kalam', cursive;
+    font-size: 14px;
+    color: rgb(108, 108, 148);
+}
+footer{
+    font-family: 'Kalam', cursive;
+    color: aliceblue;
+    font-size: 32px;
+    padding: 1cm;
+    list-style-type: none;
+}
+.copy{
+    font-size: 22px;
+    text-align: right;
+}
+.comentario_form_item{
+    list-style-type: none;
+}
+.comentario{
+    border-top: 2px solid white;
+        width: 90%;
+        margin: 0 auto;
+        padding: 17px;
+        font-size: 17px;
+        .datosPersonales{
+            & input{
+                text-transform: capitalize;
+            }
+        }
+        & label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        & input, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 17px;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        & button{
+            display: block;
+            width: 20%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 12cm;
+        }
+        & button:hover{
+            background-color: plum;
+        }
+}
